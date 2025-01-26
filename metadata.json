@@ -1,0 +1,9 @@
+{
+  "Name": "Pen ID profile",
+  "Owner": "nahkd123",
+  "Description": "Apply different effect based on pen ID",
+  "PluginVersion": "0.0.1",
+  "SupportedDriverVersion": "0.6.5.0",
+  "RepositoryUrl": "https://github.com/nahkd123/pen-id-profile.git",
+  "LicenseIdentifier": "MIT"
+}
