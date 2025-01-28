@@ -16,9 +16,9 @@ namespace nahkd123.PenIDProfile.Parser
 
         public bool TryParseID(IDeviceReport report, out string penId)
         {
-            if (report.Raw[1].IsBitSet(7))
+            if ((report.Raw[1] & 0b11110100) == 0b11110100)
             {
-                penId = BitConverter.ToString(report.Raw[1..13]);
+                penId = BitConverter.ToString(report.Raw[2..13]);
                 return true;
             } else
             {
